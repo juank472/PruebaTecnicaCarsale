@@ -1,0 +1,17 @@
+<div class="container-fluid home-app">
+    <div class="container individual text-center">
+        <div class="col-lg-12">
+        <img class="card-img-top imagen" [src]="'./assets/images/rickymorty.jpeg'" alt="Rick y Morty">
+    </div>
+    </div>
+  <h1>Rick y Morty episodios y más... ¡Wubalubadubdub!</h1>
+  <ul class="nav nav-pills">
+      <li class="nav-item">
+          <a routerLink="/personajes" [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }" class="nav-link">Personajes</a>
+      </li>
+      <li class="nav-item">
+          <a routerLink="/episodios" class="nav-link">Episodios</a>
+      </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
